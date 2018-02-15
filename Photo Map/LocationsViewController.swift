@@ -8,20 +8,25 @@
 
 import UIKit
 
+protocol LocationsViewControllerDelegate : class {
+    func locationsPickedLocation(controller: LocationsViewController, latitude: NSNumber, longitude: NSNumber)
+}
+
 class LocationsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
 
     // TODO: Fill in actual CLIENT_ID and CLIENT_SECRET
     let CLIENT_ID = "CLIENT_ID GOES HERE"
     let CLIENT_SECRET = "CLIENT_SECRET GOES HERE"
-
+    weak var delegate : LocationsViewControllerDelegate!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
+    var uploadImage: UIImage?
 
     var results: NSArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         tableView.dataSource = self
         tableView.delegate = self
         searchBar.delegate = self
