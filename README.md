@@ -17,8 +17,8 @@ Time spent: **X** hours spent in total
 
 The following **required** user stories are complete:
 
-- [ ] Configure initial map view (+2pt)
-- [ ] User can take a photo (+1pt)
+- [x] Configure initial map view (+2pt)
+- [x] User can take a photo (+1pt)
 - [ ] User can tag a location (+1pt)
 - [ ] User can drop a pin with image annotation (+1pt)
 

@@ -117,6 +117,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__has_feature) && __has_feature(modules)
 @import UIKit;
 @import Foundation;
+@import MapKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -175,7 +176,7 @@ SWIFT_CLASS("_TtC9Photo_Map23LocationsViewController")
 @property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified tableView;
 @property (nonatomic, weak) IBOutlet UISearchBar * _Null_unspecified searchBar;
 @property (nonatomic, strong) UIImage * _Nullable uploadImage;
-@property (nonatomic, strong) NSArray * _Nonnull results;
+@property (nonatomic, strong) NSArray * _Nullable results;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section;
@@ -188,6 +189,7 @@ SWIFT_CLASS("_TtC9Photo_Map23LocationsViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSNumber;
 @class UIImagePickerController;
 @class UIStoryboardSegue;
 @class MKMapView;
@@ -198,11 +200,19 @@ SWIFT_CLASS("_TtC9Photo_Map22PhotoMapViewController")
 @property (nonatomic, strong) UIImage * _Nullable myPhoto;
 - (void)viewDidLoad;
 - (void)didReceiveMemoryWarning;
+- (void)locationsPickedLocationWithController:(LocationsViewController * _Nonnull)controller latitude:(NSNumber * _Nonnull)latitude longitude:(NSNumber * _Nonnull)longitude;
 - (IBAction)cameraButtonAction:(id _Nonnull)sender;
 - (void)imagePickerController:(UIImagePickerController * _Nonnull)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *, id> * _Nonnull)info;
 - (void)prepareForSegue:(UIStoryboardSegue * _Nonnull)segue sender:(id _Nullable)sender;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@protocol MKAnnotation;
+@class MKAnnotationView;
+
+@interface PhotoMapViewController (SWIFT_EXTENSION(Photo_Map)) <MKMapViewDelegate>
+- (MKAnnotationView * _Nullable)mapView:(MKMapView * _Nonnull)mapView viewForAnnotation:(id <MKAnnotation> _Nonnull)annotation;
 @end
 
 #pragma clang diagnostic pop

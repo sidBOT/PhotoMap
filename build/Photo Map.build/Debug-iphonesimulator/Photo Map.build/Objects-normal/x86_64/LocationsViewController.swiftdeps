@@ -9,59 +9,59 @@ provides-member:
 - ["P9Photo_Map31LocationsViewControllerDelegate", ""]
 - ["C9Photo_Map23LocationsViewController", ""]
 provides-dynamic-lookup:
-- "searchBarSearchButtonClicked"
-- "CLIENT_ID"
-- "didReceiveMemoryWarning"
-- "fetchLocations"
-- "searchBar"
-- "searchBar"
-- "CLIENT_SECRET"
 - "viewDidLoad"
-- "results"
+- "CLIENT_ID"
+- "searchBar"
+- "searchBar"
+- "fetchLocations"
 - "uploadImage"
+- "CLIENT_SECRET"
 - "tableView"
 - "tableView"
 - "tableView"
 - "tableView"
+- "didReceiveMemoryWarning"
+- "results"
+- "searchBarSearchButtonClicked"
 depends-top-level:
-- !private "NSDictionary"
-- "UISearchBar"
-- !private "+"
-- !private "UnicodeScalarType"
-- "StringLiteralType"
-- "UISearchBarDelegate"
-- "LocationsViewControllerDelegate"
-- "Int"
-- "Array"
-- "UITableViewCell"
-- "Bool"
-- !private "BooleanLiteralType"
-- "UITableViewDelegate"
-- "UITableView"
-- !private "URL"
-- !private "URLSession"
-- "NSArray"
-- "UITableViewDataSource"
-- "NSNumber"
-- "IndexPath"
-- !private "URLSessionConfiguration"
-- !private "NSLog"
-- !private "URLSessionDataTask"
-- "LocationsViewController"
-- "UIViewController"
 - !private "JSONSerialization"
-- "NSRange"
+- "UITableView"
+- "LocationsViewControllerDelegate"
+- "AssignmentPrecedence"
+- !private "URL"
+- "CastingPrecedence"
+- !private "NSString"
+- "UIViewController"
+- "IndexPath"
+- "Array"
+- "Bool"
+- "String"
 - !private "OperationQueue"
-- !private "URLRequest"
+- !private "+"
+- !private "NSLog"
+- "NSRange"
+- "UISearchBar"
+- !private "URLSessionDataTask"
+- "NSArray"
+- !private "LocationCell"
+- !private "URLSession"
+- "UITableViewCell"
+- !private "UnicodeScalarType"
+- !private "URLSessionConfiguration"
+- "LocationsViewController"
+- !private "print"
 - "UIImage"
 - !private "NSIndexPath"
-- "String"
-- !private "NSString"
-- "AssignmentPrecedence"
+- "Int"
+- !private "NSDictionary"
+- !private "BooleanLiteralType"
+- "StringLiteralType"
+- !private "URLRequest"
+- "UITableViewDataSource"
+- "UITableViewDelegate"
 - !private "CharacterSet"
-- !private "print"
-- "CastingPrecedence"
-- !private "LocationCell"
+- "UISearchBarDelegate"
+- "NSNumber"
 depends-member:
 - ["Ps9AnyObject", "CLIENT_ID"]
 - ["Ps9AnyObject", "CLIENT_SECRET"]
@@ -90,8 +90,10 @@ depends-member:
 - !private ["Ps9AnyObject", "jsonObject"]
 - !private ["Ps9AnyObject", "location"]
 - !private ["Ps9AnyObject", "main"]
+- !private ["Ps9AnyObject", "navigationController"]
 - ["Ps9AnyObject", "numberOfSections"]
 - ["Ps9AnyObject", "numberOfSectionsInTableView"]
+- !private ["Ps9AnyObject", "popViewController"]
 - ["Ps9AnyObject", "position"]
 - ["Ps9AnyObject", "positionForBar"]
 - !private ["Ps9AnyObject", "print"]
@@ -166,8 +168,10 @@ depends-member:
 - !private ["Ps7CVarArg", "jsonObject"]
 - !private ["Ps7CVarArg", "location"]
 - !private ["Ps7CVarArg", "main"]
+- !private ["Ps7CVarArg", "navigationController"]
 - ["Ps7CVarArg", "numberOfSections"]
 - ["Ps7CVarArg", "numberOfSectionsInTableView"]
+- !private ["Ps7CVarArg", "popViewController"]
 - ["Ps7CVarArg", "position"]
 - ["Ps7CVarArg", "positionForBar"]
 - !private ["Ps7CVarArg", "print"]
@@ -240,8 +244,10 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "jsonObject"]
 - !private ["Ps28CustomDebugStringConvertible", "location"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
+- !private ["Ps28CustomDebugStringConvertible", "navigationController"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSections"]
 - ["Ps28CustomDebugStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps28CustomDebugStringConvertible", "popViewController"]
 - ["Ps28CustomDebugStringConvertible", "position"]
 - ["Ps28CustomDebugStringConvertible", "positionForBar"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
@@ -319,8 +325,10 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "jsonObject"]
 - !private ["Ps23CustomStringConvertible", "location"]
 - !private ["Ps23CustomStringConvertible", "main"]
+- !private ["Ps23CustomStringConvertible", "navigationController"]
 - ["Ps23CustomStringConvertible", "numberOfSections"]
 - ["Ps23CustomStringConvertible", "numberOfSectionsInTableView"]
+- !private ["Ps23CustomStringConvertible", "popViewController"]
 - ["Ps23CustomStringConvertible", "position"]
 - ["Ps23CustomStringConvertible", "positionForBar"]
 - !private ["Ps23CustomStringConvertible", "print"]
@@ -391,8 +399,10 @@ depends-member:
 - !private ["Ps9Equatable", "jsonObject"]
 - !private ["Ps9Equatable", "location"]
 - !private ["Ps9Equatable", "main"]
+- !private ["Ps9Equatable", "navigationController"]
 - ["Ps9Equatable", "numberOfSections"]
 - ["Ps9Equatable", "numberOfSectionsInTableView"]
+- !private ["Ps9Equatable", "popViewController"]
 - ["Ps9Equatable", "position"]
 - ["Ps9Equatable", "positionForBar"]
 - !private ["Ps9Equatable", "print"]
@@ -478,8 +488,10 @@ depends-member:
 - !private ["Ps8Hashable", "jsonObject"]
 - !private ["Ps8Hashable", "location"]
 - !private ["Ps8Hashable", "main"]
+- !private ["Ps8Hashable", "navigationController"]
 - ["Ps8Hashable", "numberOfSections"]
 - ["Ps8Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps8Hashable", "popViewController"]
 - ["Ps8Hashable", "position"]
 - ["Ps8Hashable", "positionForBar"]
 - !private ["Ps8Hashable", "print"]
@@ -565,6 +577,7 @@ depends-member:
 - ["C9Photo_Map23LocationsViewController", "indexPathForPreferredFocusedView"]
 - ["C9Photo_Map23LocationsViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["C9Photo_Map23LocationsViewController", "init"]
+- !private ["C9Photo_Map23LocationsViewController", "navigationController"]
 - ["C9Photo_Map23LocationsViewController", "numberOfSections"]
 - ["C9Photo_Map23LocationsViewController", "numberOfSectionsInTableView"]
 - ["C9Photo_Map23LocationsViewController", "position"]
@@ -634,8 +647,10 @@ depends-member:
 - ["PSo8NSCoding", "indexPathForPreferredFocusedViewInTableView"]
 - ["PSo8NSCoding", "init"]
 - !private ["PSo8NSCoding", "location"]
+- !private ["PSo8NSCoding", "navigationController"]
 - ["PSo8NSCoding", "numberOfSections"]
 - ["PSo8NSCoding", "numberOfSectionsInTableView"]
+- !private ["PSo8NSCoding", "popViewController"]
 - ["PSo8NSCoding", "position"]
 - ["PSo8NSCoding", "positionForBar"]
 - !private ["PSo8NSCoding", "print"]
@@ -704,8 +719,10 @@ depends-member:
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedView"]
 - ["PSo26NSExtensionRequestHandling", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo26NSExtensionRequestHandling", "init"]
+- !private ["PSo26NSExtensionRequestHandling", "navigationController"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSections"]
 - ["PSo26NSExtensionRequestHandling", "numberOfSectionsInTableView"]
+- !private ["PSo26NSExtensionRequestHandling", "popViewController"]
 - ["PSo26NSExtensionRequestHandling", "position"]
 - ["PSo26NSExtensionRequestHandling", "positionForBar"]
 - !private ["PSo26NSExtensionRequestHandling", "print"]
@@ -796,8 +813,10 @@ depends-member:
 - !private ["CSo8NSObject", "jsonObject"]
 - !private ["CSo8NSObject", "location"]
 - !private ["CSo8NSObject", "main"]
+- !private ["CSo8NSObject", "navigationController"]
 - ["CSo8NSObject", "numberOfSections"]
 - ["CSo8NSObject", "numberOfSectionsInTableView"]
+- !private ["CSo8NSObject", "popViewController"]
 - ["CSo8NSObject", "position"]
 - ["CSo8NSObject", "positionForBar"]
 - !private ["CSo8NSObject", "print"]
@@ -864,8 +883,10 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "jsonObject"]
 - !private ["PSo16NSObjectProtocol", "location"]
 - !private ["PSo16NSObjectProtocol", "main"]
+- !private ["PSo16NSObjectProtocol", "navigationController"]
 - ["PSo16NSObjectProtocol", "numberOfSections"]
 - ["PSo16NSObjectProtocol", "numberOfSectionsInTableView"]
+- !private ["PSo16NSObjectProtocol", "popViewController"]
 - ["PSo16NSObjectProtocol", "position"]
 - ["PSo16NSObjectProtocol", "positionForBar"]
 - !private ["PSo16NSObjectProtocol", "print"]
@@ -972,8 +993,10 @@ depends-member:
 - ["PSo21UIAppearanceContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo21UIAppearanceContainer", "init"]
 - !private ["PSo21UIAppearanceContainer", "location"]
+- !private ["PSo21UIAppearanceContainer", "navigationController"]
 - ["PSo21UIAppearanceContainer", "numberOfSections"]
 - ["PSo21UIAppearanceContainer", "numberOfSectionsInTableView"]
+- !private ["PSo21UIAppearanceContainer", "popViewController"]
 - ["PSo21UIAppearanceContainer", "position"]
 - ["PSo21UIAppearanceContainer", "positionForBar"]
 - !private ["PSo21UIAppearanceContainer", "print"]
@@ -1022,9 +1045,11 @@ depends-member:
 - !private ["PSo24UIBarPositioningDelegate", "URLRequest"]
 - !private ["PSo24UIBarPositioningDelegate", "URLSession"]
 - !private ["PSo24UIBarPositioningDelegate", "URLSessionConfiguration"]
+- !private ["PSo24UIBarPositioningDelegate", "delegate"]
 - !private ["PSo24UIBarPositioningDelegate", "fetchLocations"]
 - ["PSo24UIBarPositioningDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo24UIBarPositioningDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo24UIBarPositioningDelegate", "navigationController"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSections"]
 - ["PSo24UIBarPositioningDelegate", "numberOfSectionsInTableView"]
 - ["PSo24UIBarPositioningDelegate", "position"]
@@ -1075,8 +1100,10 @@ depends-member:
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedView"]
 - ["PSo18UIContentContainer", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIContentContainer", "init"]
+- !private ["PSo18UIContentContainer", "navigationController"]
 - ["PSo18UIContentContainer", "numberOfSections"]
 - ["PSo18UIContentContainer", "numberOfSectionsInTableView"]
+- !private ["PSo18UIContentContainer", "popViewController"]
 - ["PSo18UIContentContainer", "position"]
 - ["PSo18UIContentContainer", "positionForBar"]
 - !private ["PSo18UIContentContainer", "print"]
@@ -1142,8 +1169,10 @@ depends-member:
 - ["PSo18UIFocusEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UIFocusEnvironment", "init"]
 - !private ["PSo18UIFocusEnvironment", "location"]
+- !private ["PSo18UIFocusEnvironment", "navigationController"]
 - ["PSo18UIFocusEnvironment", "numberOfSections"]
 - ["PSo18UIFocusEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UIFocusEnvironment", "popViewController"]
 - ["PSo18UIFocusEnvironment", "position"]
 - ["PSo18UIFocusEnvironment", "positionForBar"]
 - !private ["PSo18UIFocusEnvironment", "print"]
@@ -1186,6 +1215,8 @@ depends-member:
 - !private ["PSo11UIFocusItem", "reloadData"]
 - !private ["PSo11UIFocusItem", "text"]
 - !private ["PSo27UIGestureRecognizerDelegate", "location"]
+- ["CSo22UINavigationController", "deinit"]
+- !private ["CSo22UINavigationController", "popViewController"]
 - ["CSo11UIResponder", "Bool"]
 - ["CSo11UIResponder", "CLIENT_ID"]
 - ["CSo11UIResponder", "CLIENT_SECRET"]
@@ -1222,8 +1253,10 @@ depends-member:
 - ["CSo11UIResponder", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo11UIResponder", "init"]
 - !private ["CSo11UIResponder", "location"]
+- !private ["CSo11UIResponder", "navigationController"]
 - ["CSo11UIResponder", "numberOfSections"]
 - ["CSo11UIResponder", "numberOfSectionsInTableView"]
+- !private ["CSo11UIResponder", "popViewController"]
 - ["CSo11UIResponder", "position"]
 - ["CSo11UIResponder", "positionForBar"]
 - !private ["CSo11UIResponder", "print"]
@@ -1278,8 +1311,10 @@ depends-member:
 - ["PSo30UIResponderStandardEditActions", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo30UIResponderStandardEditActions", "init"]
 - !private ["PSo30UIResponderStandardEditActions", "location"]
+- !private ["PSo30UIResponderStandardEditActions", "navigationController"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSections"]
 - ["PSo30UIResponderStandardEditActions", "numberOfSectionsInTableView"]
+- !private ["PSo30UIResponderStandardEditActions", "popViewController"]
 - ["PSo30UIResponderStandardEditActions", "position"]
 - ["PSo30UIResponderStandardEditActions", "positionForBar"]
 - !private ["PSo30UIResponderStandardEditActions", "print"]
@@ -1330,9 +1365,11 @@ depends-member:
 - !private ["PSo20UIScrollViewDelegate", "URLRequest"]
 - !private ["PSo20UIScrollViewDelegate", "URLSession"]
 - !private ["PSo20UIScrollViewDelegate", "URLSessionConfiguration"]
+- !private ["PSo20UIScrollViewDelegate", "delegate"]
 - !private ["PSo20UIScrollViewDelegate", "fetchLocations"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo20UIScrollViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo20UIScrollViewDelegate", "navigationController"]
 - ["PSo20UIScrollViewDelegate", "numberOfSections"]
 - ["PSo20UIScrollViewDelegate", "numberOfSectionsInTableView"]
 - ["PSo20UIScrollViewDelegate", "position"]
@@ -1380,9 +1417,11 @@ depends-member:
 - !private ["PSo19UISearchBarDelegate", "URLRequest"]
 - !private ["PSo19UISearchBarDelegate", "URLSession"]
 - !private ["PSo19UISearchBarDelegate", "URLSessionConfiguration"]
+- !private ["PSo19UISearchBarDelegate", "delegate"]
 - !private ["PSo19UISearchBarDelegate", "fetchLocations"]
 - ["PSo19UISearchBarDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UISearchBarDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UISearchBarDelegate", "navigationController"]
 - ["PSo19UISearchBarDelegate", "numberOfSections"]
 - ["PSo19UISearchBarDelegate", "numberOfSectionsInTableView"]
 - ["PSo19UISearchBarDelegate", "position"]
@@ -1433,8 +1472,10 @@ depends-member:
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedView"]
 - ["PSo16UIStateRestoring", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo16UIStateRestoring", "init"]
+- !private ["PSo16UIStateRestoring", "navigationController"]
 - ["PSo16UIStateRestoring", "numberOfSections"]
 - ["PSo16UIStateRestoring", "numberOfSectionsInTableView"]
+- !private ["PSo16UIStateRestoring", "popViewController"]
 - ["PSo16UIStateRestoring", "position"]
 - ["PSo16UIStateRestoring", "positionForBar"]
 - !private ["PSo16UIStateRestoring", "print"]
@@ -1485,9 +1526,11 @@ depends-member:
 - !private ["PSo21UITableViewDataSource", "URLRequest"]
 - !private ["PSo21UITableViewDataSource", "URLSession"]
 - !private ["PSo21UITableViewDataSource", "URLSessionConfiguration"]
+- !private ["PSo21UITableViewDataSource", "delegate"]
 - !private ["PSo21UITableViewDataSource", "fetchLocations"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedView"]
 - ["PSo21UITableViewDataSource", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo21UITableViewDataSource", "navigationController"]
 - ["PSo21UITableViewDataSource", "numberOfSections"]
 - ["PSo21UITableViewDataSource", "numberOfSectionsInTableView"]
 - ["PSo21UITableViewDataSource", "position"]
@@ -1532,9 +1575,11 @@ depends-member:
 - !private ["PSo19UITableViewDelegate", "URLRequest"]
 - !private ["PSo19UITableViewDelegate", "URLSession"]
 - !private ["PSo19UITableViewDelegate", "URLSessionConfiguration"]
+- !private ["PSo19UITableViewDelegate", "delegate"]
 - !private ["PSo19UITableViewDelegate", "fetchLocations"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedView"]
 - ["PSo19UITableViewDelegate", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["PSo19UITableViewDelegate", "navigationController"]
 - ["PSo19UITableViewDelegate", "numberOfSections"]
 - ["PSo19UITableViewDelegate", "numberOfSectionsInTableView"]
 - ["PSo19UITableViewDelegate", "position"]
@@ -1590,8 +1635,10 @@ depends-member:
 - ["PSo18UITraitEnvironment", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["PSo18UITraitEnvironment", "init"]
 - !private ["PSo18UITraitEnvironment", "location"]
+- !private ["PSo18UITraitEnvironment", "navigationController"]
 - ["PSo18UITraitEnvironment", "numberOfSections"]
 - ["PSo18UITraitEnvironment", "numberOfSectionsInTableView"]
+- !private ["PSo18UITraitEnvironment", "popViewController"]
 - ["PSo18UITraitEnvironment", "position"]
 - ["PSo18UITraitEnvironment", "positionForBar"]
 - !private ["PSo18UITraitEnvironment", "print"]
@@ -1667,8 +1714,10 @@ depends-member:
 - ["CSo16UIViewController", "indexPathForPreferredFocusedView"]
 - ["CSo16UIViewController", "indexPathForPreferredFocusedViewInTableView"]
 - ["CSo16UIViewController", "init"]
+- !private ["CSo16UIViewController", "navigationController"]
 - ["CSo16UIViewController", "numberOfSections"]
 - ["CSo16UIViewController", "numberOfSectionsInTableView"]
+- !private ["CSo16UIViewController", "popViewController"]
 - ["CSo16UIViewController", "position"]
 - ["CSo16UIViewController", "positionForBar"]
 - !private ["CSo16UIViewController", "print"]
@@ -1766,8 +1815,10 @@ depends-member:
 - !private ["Ps9_Hashable", "jsonObject"]
 - !private ["Ps9_Hashable", "location"]
 - !private ["Ps9_Hashable", "main"]
+- !private ["Ps9_Hashable", "navigationController"]
 - ["Ps9_Hashable", "numberOfSections"]
 - ["Ps9_Hashable", "numberOfSectionsInTableView"]
+- !private ["Ps9_Hashable", "popViewController"]
 - ["Ps9_Hashable", "position"]
 - ["Ps9_Hashable", "positionForBar"]
 - !private ["Ps9_Hashable", "print"]
@@ -1886,6 +1937,7 @@ depends-nominal:
 - "PSo18UIFocusEnvironment"
 - !private "PSo11UIFocusItem"
 - !private "PSo27UIGestureRecognizerDelegate"
+- "CSo22UINavigationController"
 - "CSo11UIResponder"
 - "PSo30UIResponderStandardEditActions"
 - !private "CSo12UIScrollView"
@@ -1961,4 +2013,4 @@ depends-external:
 - "/Users/SiD/Desktop/CS 490/PhotoMap/build/Debug-iphonesimulator/AFNetworking.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/MapKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreLocation.swiftmodule"
-interface-hash: "92a48100d333030a9ffb161b289704e4"
+interface-hash: "58060570343c811e985e324b39bde90d"
